@@ -35,7 +35,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (v.getId()) {
             case R.id.buttonPlay:
-                mediaPlayer.start();
+                if (mediaPlayer != null && !mediaPlayer.isPlaying()) {
+                    mediaPlayer.start();
+                }
                 play.setEnabled(false);
                 pause.setEnabled(true);
                 break;
