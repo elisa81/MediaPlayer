@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-//        MediaPlayer mediaPlayer = null;
 
         switch (v.getId()) {
             case R.id.buttonPlay:
